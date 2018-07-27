@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <style>
+  .modal-body div {display: inline-block;width: 49%;}
+  .modal-body div:hover{opacity: 0.5;}
+  </style>
+  <!--이미지 사이즈를 49%씩 할당한다-->
+</head>
+<body>
+
+<div class="container">
+  <!-- Button to Open the Modal -->
+  <button id="modal-button" type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" hidden>
+    Open modal
+  </button>
+
+  <!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Modal Heading</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <img src="" alt="">
+        <!-- Modal body -->
+        <div class="modal-body">
+          사용자 모드를 선택해주세요
+          <br>
+        <div>
+          <a href="login.html"><img src="jj.jpg" alt="">
+          <p>소비자</p>
+          </a>
+        </div>
+        <div>
+          <a href="login.html"><img src="kk.jpg" alt="">
+            <p>도매업자</p>
+        </a>
+        </div>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+</div>
+<script>
+    $( document ).ready(function() {
+        $("#modal-button").click();
+    })
+</script>
+  
+</body>
+</html>
+
